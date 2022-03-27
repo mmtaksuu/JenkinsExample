@@ -1,0 +1,16 @@
+.idea/*
+*/build/*
+*/Debug/*
+*/Release/*
+*/cmake-build-debug/*
+*/cmake-build-release/*
+*/clion-log.txt
+
+Debug/*
+Release/*
+
+clion-log.txt
+cmake-build-debug
+cmake-build-release
+cmake-build-debug-coverage
+.idea/
