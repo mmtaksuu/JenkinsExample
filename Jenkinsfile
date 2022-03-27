@@ -14,7 +14,7 @@ pipeline {
 	stages {
         stage('Build') {
             steps {
-                cmake arguments: '-DCMAKE_TOOLCHAIN_FILE=~/Applications/CLion.app/Contents/bin/ninja/mac/ninja', installation: 'InSearchPath'
+                cmake arguments: '-DCMAKE_TOOLCHAIN_FILE=~/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++', installation: 'InSearchPath'
                 cmakeBuild buildType: 'Debug', cleanBuild: true, installation: 'InSearchPath', steps: [[withCmake: true]]
             }
         }
