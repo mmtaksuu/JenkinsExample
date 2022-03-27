@@ -13,6 +13,8 @@ int main(int argc, char **argv )
     window.show();
 
     std::string hello = HelloWorld{}.helloWorld();
+
     window.setWindowTitle(QApplication::translate("toplevel", hello.c_str()));
+
     return app.exec();
 }
